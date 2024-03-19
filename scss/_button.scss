@@ -1,0 +1,143 @@
+button {
+    padding: 0;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.btn_style {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none!important;
+    transition: $transition;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.form_btn {
+    margin-top: 50px;
+    text-align: center;
+
+    .btn_item {
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+// ------------
+
+.btn_primary_purple {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: #fff;
+    min-width: 160px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn_primary_gray {
+    background-color: #F5F5F5;
+    border: 1px solid #C4C4C4;
+    color: $text-primary;
+    min-width: 160px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn_primary_red {
+    background-color: $danger;
+    border: 1px solid $danger;
+    color: #fff;
+    min-width: 160px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn_primary_clear {
+    background-color: #F5F5F5;
+    border: 1px solid #C4C4C4;
+    color: $danger;
+    min-width: 160px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn_primary_outline {
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    min-width: 160px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+// ------------
+
+.btn_secondary {
+    background-color: $primary-color;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    min-height: 35px;
+    padding: 8px;
+
+    &:disabled {
+        border: 1px solid #c3c3c3;
+        background-color: #F9F9F9;
+        border-radius: 4px;
+        color: #c3c3c3;
+        cursor: default;
+    }
+}
+
+.btn_secondary_danger{
+    background-color: #FEE7E9;
+    border: 1px solid #F55864;
+    color: #F55864;
+}
+
+// -----------
+.operateBtn {
+    display: flex;
+    align-items: center;
+
+    button,
+    a {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}
+
+// -----------
+
+.table_operateBtn {
+    
+    .btn_edit,
+    .btn_detail,
+    .btn_primary {
+        color: $primary-color;
+        border: 0;
+        background-color: transparent;
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+
+    .btn_delete {
+        color: $danger;
+        border: 0;
+        background-color: transparent;
+    }
+}

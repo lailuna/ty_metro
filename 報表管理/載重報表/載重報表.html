@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../plugin/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugin/jquery-ui/jquery-ui.min.css">
+    <!-- fontawesome CSS-->
+    <link rel="stylesheet" href="../../plugin/fontawesome-5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../css/all.css">
+    <title>桃園捷運</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../../img/logo_sm.png" alt="">
+            <div class="header_right">
+                <div class="user_data">登入者: OOO管理處/王O成</div>
+                <button type="button" class="btn_style btn_secondary">登出</button>
+            </div>
+        </div>
+    </header>
+    <div class="row g-0 wrapper">
+        <div class="col-lg-2 sidebar">
+            <ul class="sidebar_list firstfloor">
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">儀錶板<i class="fas fa-angle-down icon" aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../儀錶板/運能分析.html">運能分析</a>
+                        </li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../儀錶板/站間流量.html">站間流量</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">運能分析告警設定<i class="fa fa-angle-down icon"
+                            aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../運能分析告警設定/車廂告警設定.html">車廂告警設定</a>
+                        </li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../運能分析告警設定/路線告警設定.html">路線告警設定</a>
+                        </li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../運能分析告警設定/班距.html">班距</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">站間流量告警設定<i class="fa fa-angle-down icon"
+                            aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../站間流量告警設定/流量.html">流量</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../站間流量告警設定/承載率.html">承載率</a></li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">公式設定<i class="fa fa-angle-down icon" aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../公式設定/運能分析.html">運能分析</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../公式設定/站間流量.html">站間流量</a></li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">燈號級距設定<i class="fa fa-angle-down icon"
+                            aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../燈號級距設定/普通車.html">普通車</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../燈號級距設定/直達車.html">直達車</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../燈號級距設定/全日監控.html">全日監控</a></li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">活動行事曆<i class="fa fa-angle-down icon"
+                            aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../活動行事曆/活動行事曆.html">活動行事曆</a></li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">報表管理<i class="fa fa-angle-down icon" aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../報表管理/載重報表/載重報表.html">載重報表</a>
+                        </li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../報表管理/流量報表/流量報表.html">流量報表</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="">官網報表</a></li>
+                    </ul>
+                </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">帳號管理<i class="fa fa-angle-down icon" aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-10 content_bg">
+            <section>
+                <div class="contentSection">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">首頁</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">報表管理</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">載重報表</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">空車值載重報表-平均值</li>
+                        </ol>
+                    </nav>
+                    <div class="contentSection_header">
+                        <div class="title">載重報表</div>
+                    </div>
+                    <div class="nav_list">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-report1-tab" data-bs-toggle="pill"
+                                    href="#pills-report1" role="tab" aria-controls="pills-report1"
+                                    aria-selected="true">空車值載重報表-平均值</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-report2-tab" data-bs-toggle="pill" href="#pills-report2"
+                                    role="tab" aria-controls="pills-report2" aria-selected="false">載重報表-原始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-report3-tab" data-bs-toggle="pill" href="#pills-report3"
+                                    role="tab" aria-controls="pills-report3" aria-selected="false">載重報表-調整後</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-report4-tab" data-bs-toggle="pill" href="#pills-report4"
+                                    role="tab" aria-controls="pills-report4" aria-selected="false">載重報表-前後差異</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" id="pills-report5-tab" data-bs-toggle="pill" href="#pills-report5"
+                                    role="tab" aria-controls="pills-report5" aria-selected="false">載重及cctv報表比對差異</a>
+                            </li> -->
+                        </ul>
+
+                    </div>
+                    <div class="contentSection_content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-report1" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="searchSection filter">
+                                    <div class="content-header">
+                                        <div class="title">查詢條件</div>
+                                        <div class="operateBtnGroup">
+                                            <button type="button" class="btn operateBtn">查詢</button>
+                                            <button type="button" class="btn operateBtn">清除</button>
+                                            <button type="button" class="btn operateBtn">匯出</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-body pb-0">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">指定日期區間:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車種:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">直達車</option>
+                                                            <option value="">普通車</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車號:</label>
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="searchSection result">
+                                    <div class="content-header">
+                                        <div class="title">查詢結果</div>
+                                    </div>
+                                    <div class="content-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">車種</th>
+                                                    <th scope="col">車號</th>
+                                                    <th scope="col">datatime</th>
+                                                    <th scope="col">C1壓力值</th>
+                                                    <th scope="col">C2壓力值</th>
+                                                    <th scope="col">C3壓力值</th>
+                                                    <th scope="col">C4壓力值</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>直達車</td>
+                                                    <td>T201</td>
+                                                    <td>2024/01/26</td>
+                                                    <td>3.65</td>
+                                                    <td>3.415</td>
+                                                    <td>3.68</td>
+                                                    <td>3.57</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-report2" role="tabpanel"
+                                aria-labelledby="pills-report2-tab">
+                                <div class="searchSection filter">
+                                    <div class="content-header">
+                                        <div class="title">查詢條件</div>
+                                        <div class="operateBtnGroup">
+                                            <button type="button" class="btn operateBtn">查詢</button>
+                                            <button type="button" class="btn operateBtn">清除</button>
+                                            <button type="button" class="btn operateBtn">匯出</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-body pb-0">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">指定日期區間:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">datatime:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車站:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">A1台北車站</option>
+                                                            <option value="">A3新北產業園區</option>
+                                                            <option value="">A8長庚醫院</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車種:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">直達車</option>
+                                                            <option value="">普通車</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車號:</label>
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">方向:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">往台北</option>
+                                                            <option value="">往中壢</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="searchSection result">
+                                    <div class="content-header">
+                                        <div class="title">查詢結果</div>
+                                    </div>
+                                    <div class="content-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">車種</th>
+                                                        <th scope="col">車號</th>
+                                                        <th scope="col">方向</th>
+                                                        <th scope="col" width="5%">站編+名</th>
+                                                        <th scope="col">datatime</th>
+                                                        <th scope="col">C1<br>人數</th>
+                                                        <th scope="col">C2<br>人數</th>
+                                                        <th scope="col">C3<br>人數</th>
+                                                        <th scope="col">C4<br>人數</th>
+                                                        <th scope="col">列車總人數</th>
+                                                        <th scope="col">C1<br>壓力值</th>
+                                                        <th scope="col">C2<br>壓力值</th>
+                                                        <th scope="col">C3<br>壓力值</th>
+                                                        <th scope="col">C4<br>壓力值</th>
+                                                        <th scope="col">CCTV-C1<br>分數</th>
+                                                        <th scope="col">CCTV-C2<br>分數</th>
+                                                        <th scope="col">CCTV-C3<br>分數</th>
+                                                        <th scope="col">CCTV-C4<br>分數</th>
+                                                        <th scope="col">CCTV-C1<br>行李推估</th>
+                                                        <th scope="col">CCTV-C2<br>行李推估</th>
+                                                        <th scope="col">CCTV-C3<br>行李推估</th>
+                                                        <th scope="col">CCTV-C4<br>行李推估</th>
+                                                        <th scope="col">CCTV-C1<br>人數<br>(扣除行李)</th>
+                                                        <th scope="col">CCTV-C2<br>人數<br>(扣除行李)</th>
+                                                        <th scope="col">CCTV-C3<br>人數<br>(扣除行李)</th>
+                                                        <th scope="col">CCTV-C4<br>人數<br>(扣除行李)</th>
+                                                        <th scope="col">列車總人數<br>(扣除行李)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>直達車</td>
+                                                        <td>T201</td>
+                                                        <td>往台北</td>
+                                                        <td>A1台北車站</td>
+                                                        <td>2024/01/26</td>
+                                                        <td>50</td>
+                                                        <td>58</td>
+                                                        <td>71</td>
+                                                        <td>62</td>
+                                                        <td>241</td>
+                                                        <td>3.65</td>
+                                                        <td>3.415</td>
+                                                        <td>3.68</td>
+                                                        <td>3.57</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>3</td>
+                                                        <td>2</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>3</td>
+                                                        <td>2</td>
+                                                        <td>50</td>
+                                                        <td>58</td>
+                                                        <td>71</td>
+                                                        <td>62</td>
+                                                        <td>241</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-report3" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="searchSection filter">
+                                    <div class="content-header">
+                                        <div class="title">查詢條件</div>
+                                        <div class="operateBtnGroup">
+                                            <button type="button" class="btn operateBtn">查詢</button>
+                                            <button type="button" class="btn operateBtn">清除</button>
+                                            <button type="button" class="btn operateBtn">匯出</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-body pb-0">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">指定日期區間:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">datatime:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車站:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">A1台北車站</option>
+                                                            <option value="">A3新北產業園區</option>
+                                                            <option value="">A8長庚醫院</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車種:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">直達車</option>
+                                                            <option value="">普通車</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車號:</label>
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">方向:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">往台北</option>
+                                                            <option value="">往中壢</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="searchSection result">
+                                    <div class="content-header">
+                                        <div class="title">查詢結果</div>
+                                    </div>
+                                    <div class="content-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">車種</th>
+                                                    <th scope="col">車號</th>
+                                                    <th scope="col">方向</th>
+                                                    <th scope="col">站編+名</th>
+                                                    <th scope="col">datatime</th>
+                                                    <th scope="col">C1<br>人數</th>
+                                                    <th scope="col">C2<br>人數</th>
+                                                    <th scope="col">C3<br>人數</th>
+                                                    <th scope="col">C4<br>人數</th>
+                                                    <th scope="col">列車總人數</th>
+                                                    <th scope="col">C1<br>壓力值</th>
+                                                    <th scope="col">C2<br>壓力值</th>
+                                                    <th scope="col">C3<br>壓力值</th>
+                                                    <th scope="col">C4<br>壓力值</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>直達車</td>
+                                                    <td>T201</td>
+                                                    <td>往台北</td>
+                                                    <td>A1台北車站</td>
+                                                    <td>2024/01/26</td>
+                                                    <td>50</td>
+                                                    <td>58</td>
+                                                    <td>71</td>
+                                                    <td>62</td>
+                                                    <td>241</td>
+                                                    <td>3.65</td>
+                                                    <td>3.415</td>
+                                                    <td>3.68</td>
+                                                    <td>3.57</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-report4" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="searchSection filter">
+                                    <div class="content-header">
+                                        <div class="title">查詢條件</div>
+                                        <div class="operateBtnGroup">
+                                            <button type="button" class="btn operateBtn">查詢</button>
+                                            <button type="button" class="btn operateBtn">清除</button>
+                                            <button type="button" class="btn operateBtn">匯出</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-body pb-0">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">指定日期區間:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">datatime:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車站:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">A1台北車站</option>
+                                                            <option value="">A3新北產業園區</option>
+                                                            <option value="">A8長庚醫院</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車種:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">直達車</option>
+                                                            <option value="">普通車</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車號:</label>
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">方向:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">往台北</option>
+                                                            <option value="">往中壢</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="searchSection result">
+                                    <div class="content-header">
+                                        <div class="title">查詢結果</div>
+                                    </div>
+                                    <div class="content-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">車種</th>
+                                                    <th scope="col">車號</th>
+                                                    <th scope="col">方向</th>
+                                                    <th scope="col">站編+名</th>
+                                                    <th scope="col">datatime</th>
+                                                    <th scope="col">C1<br>人數</th>
+                                                    <th scope="col">C2<br>人數</th>
+                                                    <th scope="col">C3<br>人數</th>
+                                                    <th scope="col">C4<br>人數</th>
+                                                    <th scope="col">列車總人數</th>
+                                                    <th scope="col">C1<br>壓力值</th>
+                                                    <th scope="col">C2<br>壓力值</th>
+                                                    <th scope="col">C3<br>壓力值</th>
+                                                    <th scope="col">C4<br>壓力值</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>直達車</td>
+                                                    <td>T201</td>
+                                                    <td>往台北</td>
+                                                    <td>A1台北車站</td>
+                                                    <td>2024/01/26</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="tab-pane fade" id="pills-report5" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="searchSection filter">
+                                    <div class="content-header">
+                                        <div class="title">查詢條件</div>
+                                        <div class="operateBtnGroup">
+                                            <button type="button" class="btn operateBtn">查詢</button>
+                                            <button type="button" class="btn operateBtn">清除</button>
+                                            <button type="button" class="btn operateBtn">匯出</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-body pb-0">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">指定日期區間:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">datatime:</label>
+                                                        <div class="rangeSelect">
+                                                            <input type="text" class="form-control datepicker" id="">~
+                                                            <input type="text" class="form-control datepicker" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車站:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">A1台北車站</option>
+                                                            <option value="">A3新北產業園區</option>
+                                                            <option value="">A8長庚醫院</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車種:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">直達車</option>
+                                                            <option value="">普通車</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">車號:</label>
+                                                        <input type="text" class="form-control" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form_item">
+                                                        <label for="">方向:</label>
+                                                        <select name="" id="">
+                                                            <option value="">請選擇</option>
+                                                            <option value="">往台北</option>
+                                                            <option value="">往中壢</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="searchSection result">
+                                    <div class="content-header">
+                                        <div class="title">查詢結果</div>
+                                    </div>
+                                    <div class="content-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">車種</th>
+                                                    <th scope="col">車號</th>
+                                                    <th scope="col">車次</th>
+                                                    <th scope="col">方向</th>
+                                                    <th scope="col">站編+名</th>
+                                                    <th scope="col">datatime</th>
+                                                    <th scope="col">C1<br>人數</th>
+                                                    <th scope="col">C2<br>人數</th>
+                                                    <th scope="col">C3<br>人數</th>
+                                                    <th scope="col">C4<br>人數</th>
+                                                    <th scope="col">列車總人數</th>
+                                                    <th scope="col">C1<br>壓力值</th>
+                                                    <th scope="col">C2<br>壓力值</th>
+                                                    <th scope="col">C3<br>壓力值</th>
+                                                    <th scope="col">C4<br>壓力值</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>直達車</td>
+                                                    <td>T201</td>
+                                                    <td></td>
+                                                    <td>往台北</td>
+                                                    <td>A1台北車站</td>
+                                                    <td>2024/01/26</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_section">
+            <p>桃園大眾捷運股份有限公司版權所有 2023 Taoyuan Metro Corporation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="../../plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../plugin/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../plugin/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="../../js/all.js"></script>
+
+    <script>
+        $(function () {
+            $(".datepicker").datepicker();
+        });
+    </script>
+</body>
+
+</html>
