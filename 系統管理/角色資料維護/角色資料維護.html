@@ -111,11 +111,11 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">首頁</a></li>
                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">系統管理</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">人員與角色設定</li>
+                            <li class="breadcrumb-item active" aria-current="page">角色資料維護</li>
                         </ol>
                     </nav>
                     <div class="contentSection_header">
-                        <div class="title">人員與角色設定</div>
+                        <div class="title">角色資料維護</div>
                     </div>
                     <div class="contentSection_content">
                         <div class="searchSection filter">
@@ -124,39 +124,12 @@
                                 <div class="operateBtnGroup">
                                     <button type="button" class="btn operateBtn">查詢</button>
                                     <button type="button" class="btn operateBtn">清除</button>
+                                    <a href="角色資料維護_新增.html" class="btn operateBtn">新增</a>
                                 </div>
                             </div>
                             <div class="content-body pb-0">
                                 <form action="">
                                     <div class="row">
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">員工編號</label>
-                                                <input type="text" class="form-control" id="">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">職稱</label>
-                                                <select name="" id="">
-                                                    <option value="">請選擇</option>
-                                                    <option value="">直達車</option>
-                                                    <option value="">普通車</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">姓名(員工姓名)</label>
-                                                <input type="text" class="form-control" id="">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">部門代碼(關鍵字)</label>
-                                                <input type="text" class="form-control" id="">
-                                            </div>
-                                        </div>
                                         <div class="col-3">
                                             <div class="form_item">
                                                 <label for="">角色代號</label>
@@ -171,7 +144,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form_item">
-                                                <label for="">啟用狀態</label>
+                                                <label for="">是否啟用</label>
                                                 <div class="radio_group radio_inline">
                                                     <div class="radio_item">
                                                         <input type="radio" id="yes" name="enable" checked>
@@ -190,7 +163,7 @@
                                         </div>
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">啟用日期起迄</label>
+                                                <label for="">啟用日期</label>
                                                 <div class="rangeSelect">
                                                     <input type="text" class="form-control datepicker" id="">~
                                                     <input type="text" class="form-control datepicker" id="">
@@ -199,7 +172,7 @@
                                         </div>       
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">停用日期起迄</label>
+                                                <label for="">停用日期</label>
                                                 <div class="rangeSelect">
                                                     <input type="text" class="form-control datepicker" id="">~
                                                     <input type="text" class="form-control datepicker" id="">
@@ -219,33 +192,28 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">操作</th>
-                                            <th scope="col">單位</th>
-                                            <th scope="col">帳號</th>
-                                            <th scope="col">姓名</th>
-                                            <th scope="col">職稱</th>
+                                            <th scope="col">排序</th>
+                                            <th scope="col">啟用狀態</th>
                                             <th scope="col">角色代號</th>
                                             <th scope="col">角色名稱</th>
-                                            <th scope="col">角色啟用狀態</th>
-                                            <th scope="col">角色啟用日期</th>
-                                            <th scope="col">角色停用狀態</th>
+                                            <th scope="col">啟用日期</th>
+                                            <th scope="col">停用日期</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td width="5%">
+                                            <td width="10%">
                                                 <div class="table_operateBtn text-center">
-                                                    <a href="人員與角色設定_編輯.html" class="btn_style btn_edit">編輯</a>
+                                                    <a href="角色資料維護_編輯.html" class="btn_style btn_edit">編輯</a>
+                                                    <button type="button" class="btn_style btn_delete">刪除</button>
                                                 </div>
                                             </td>
-                                            <td>單位1</td>
-                                            <td>00001</td>
-                                            <td>楊小胖</td>
-                                            <td>副總經理</td>
+                                            <td>1</td>
+                                            <td>啟用</td>
                                             <td>001</td>
                                             <td>名稱1</td>
-                                            <td>啟用</td>
-                                            <td>2021/04/20</td>
-                                            <td>2021/12/31</td>
+                                            <td>2021/05/01</td>
+                                            <td>2021/05/31</td>
                                         </tr>
                                     </tbody>
                                 </table>

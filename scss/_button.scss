@@ -107,6 +107,9 @@ button {
 .operateBtn {
     display: flex;
     align-items: center;
+    line-height: 1;
+    background-color: #fff;
+    font-size: 14px;
 
     button,
     a {

@@ -111,11 +111,11 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">首頁</a></li>
                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">系統管理</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">人員與角色設定</li>
+                            <li class="breadcrumb-item active" aria-current="page">功能資料維護</li>
                         </ol>
                     </nav>
                     <div class="contentSection_header">
-                        <div class="title">人員與角色設定</div>
+                        <div class="title">功能資料維護</div>
                     </div>
                     <div class="contentSection_content">
                         <div class="searchSection filter">
@@ -124,6 +124,7 @@
                                 <div class="operateBtnGroup">
                                     <button type="button" class="btn operateBtn">查詢</button>
                                     <button type="button" class="btn operateBtn">清除</button>
+                                    <a href="功能資料維護_新增.html" class="btn operateBtn">新增</a>
                                 </div>
                             </div>
                             <div class="content-body pb-0">
@@ -131,47 +132,19 @@
                                     <div class="row">
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">員工編號</label>
+                                                <label for="">功能代號(關鍵字)</label>
                                                 <input type="text" class="form-control" id="">
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">職稱</label>
-                                                <select name="" id="">
-                                                    <option value="">請選擇</option>
-                                                    <option value="">直達車</option>
-                                                    <option value="">普通車</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">姓名(員工姓名)</label>
+                                                <label for="">角色選單名稱(關鍵字)</label>
                                                 <input type="text" class="form-control" id="">
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">部門代碼(關鍵字)</label>
-                                                <input type="text" class="form-control" id="">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">角色代號</label>
-                                                <input type="text" class="form-control" id="">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="form_item">
-                                                <label for="">角色名稱</label>
-                                                <input type="text" class="form-control" id="">
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="form_item">
-                                                <label for="">啟用狀態</label>
+                                                <label for="">是否啟用</label>
                                                 <div class="radio_group radio_inline">
                                                     <div class="radio_item">
                                                         <input type="radio" id="yes" name="enable" checked>
@@ -187,25 +160,54 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>                 
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="form_item">
+                                                <label for="">功能選單標註</label>
+                                                <div class="radio_group radio_inline">
+                                                    <div class="radio_item">
+                                                        <input type="radio" id="show" name="remark" checked>
+                                                        <label for="show">顯示</label>
+                                                    </div>
+                                                    <div class="radio_item">
+                                                        <input type="radio" id="noshow" name="remark">
+                                                        <label for="noshow">不顯示</label>
+                                                    </div>
+                                                    <div class="radio_item">
+                                                        <input type="radio" id="all" name="remark">
+                                                        <label for="all">全部</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">啟用日期起迄</label>
-                                                <div class="rangeSelect">
-                                                    <input type="text" class="form-control datepicker" id="">~
-                                                    <input type="text" class="form-control datepicker" id="">
-                                                </div>
+                                                <label for="">功能類別</label>
+                                                <select name="" id="">
+                                                    <option value="">請選擇</option>
+                                                    <option value="">類別1</option>
+                                                    <option value="">類別2</option>
+                                                </select>
                                             </div>
-                                        </div>       
+                                        </div>
                                         <div class="col-3">
                                             <div class="form_item">
-                                                <label for="">停用日期起迄</label>
-                                                <div class="rangeSelect">
-                                                    <input type="text" class="form-control datepicker" id="">~
-                                                    <input type="text" class="form-control datepicker" id="">
-                                                </div>
+                                                <label for="">上層功能代號</label>
+                                                <input type="text" class="form-control" id="">
                                             </div>
-                                        </div>                                         
+                                        </div>             
+                                        <div class="col-3">
+                                            <div class="form_item">
+                                                <label for="">模組代號</label>
+                                                <select name="" id="">
+                                                    <option value="">請選擇</option>
+                                                    <option value="">001</option>
+                                                    <option value="">002</option>
+                                                </select>
+                                            </div>
+                                        </div>       
                                     </div>
                                 </form>
                             </div>
@@ -219,33 +221,29 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">操作</th>
-                                            <th scope="col">單位</th>
-                                            <th scope="col">帳號</th>
-                                            <th scope="col">姓名</th>
-                                            <th scope="col">職稱</th>
-                                            <th scope="col">角色代號</th>
-                                            <th scope="col">角色名稱</th>
-                                            <th scope="col">角色啟用狀態</th>
-                                            <th scope="col">角色啟用日期</th>
-                                            <th scope="col">角色停用狀態</th>
+                                            <th scope="col">模組名稱</th>
+                                            <th scope="col">上層功能</th>
+                                            <th scope="col">功能代號</th>
+                                            <th scope="col">功能選單名稱</th>
+                                            <th scope="col">功能類別</th>
+                                            <th scope="col">啟用狀態</th>
+                                            <th scope="col">功能選單備註</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td width="5%">
                                                 <div class="table_operateBtn text-center">
-                                                    <a href="人員與角色設定_編輯.html" class="btn_style btn_edit">編輯</a>
+                                                    <a href="功能資料維護_編輯.html" class="btn_style btn_edit">編輯</a>
                                                 </div>
                                             </td>
-                                            <td>單位1</td>
-                                            <td>00001</td>
-                                            <td>楊小胖</td>
-                                            <td>副總經理</td>
-                                            <td>001</td>
                                             <td>名稱1</td>
+                                            <td>功能1</td>
+                                            <td>002</td>
+                                            <td>名稱1</td>
+                                            <td>類別1</td>
                                             <td>啟用</td>
-                                            <td>2021/04/20</td>
-                                            <td>2021/12/31</td>
+                                            <td>顯示</td>
                                         </tr>
                                     </tbody>
                                 </table>

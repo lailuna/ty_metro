@@ -354,7 +354,7 @@ p {
   min-width: unset !important;
 }
 .checkbox_item input[type=checkbox] {
-  margin-right: 5px;
+  margin: 0 5px;
 }
 
 .radio_group .radio_item label {
@@ -508,6 +508,9 @@ button:focus {
 .operateBtn {
   display: flex;
   align-items: center;
+  line-height: 1;
+  background-color: #fff;
+  font-size: 14px;
 }
 .operateBtn button:not(:last-child),
 .operateBtn a:not(:last-child) {
@@ -641,6 +644,18 @@ input[type=radio] {
   border-bottom: 0;
   background-color: #F0F0F0;
   text-align: center;
+}
+
+.table-bordered td {
+  background-color: #fff;
+}
+
+.main_item {
+  font-weight: bold;
+}
+
+.sub_item {
+  text-indent: 42px;
 }
 
 .login_img {

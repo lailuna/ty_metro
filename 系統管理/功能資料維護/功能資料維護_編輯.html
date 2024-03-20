@@ -95,7 +95,8 @@
                         <li class="secondfloor_item"><a class="secondfloor_link"
                                 href="../../報表管理/載重報表/載重報表.html">載重報表</a>
                         </li>
-                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../報表管理/流量報表/流量報表.html">流量報表</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../../報表管理/流量報表/流量報表.html">流量報表</a>
+                        </li>
                         <li class="secondfloor_item"><a class="secondfloor_link" href="">官網報表</a></li>
                     </ul>
                 </li>
@@ -122,7 +123,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">首頁</a></li>
                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">系統管理</a></li>
-                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">人員與角色設定</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">功能資料維護</a></li>
                             <li class="breadcrumb-item active" aria-current="page">編輯</li>
                         </ol>
                     </nav>
@@ -130,154 +131,102 @@
                         <div class="title">編輯</div>
                     </div>
                     <div class="contentSection_content">
-                        <div class="searchSection">
-                            <div class="content-body">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">員工編號</label>
-                                        <span>187552120370</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">姓名</label>
-                                        <span>楊小胖</span>
-                                    </div>
+                        <form action="">
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">功能代號</label>
+                                    <input type="text" class="form-control w-100" id="">
                                 </div>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">部門代碼</label>
-                                        <span>00123</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">職稱</label>
-                                        <span>副總經理</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">部門名稱</label>
-                                        <span>總經理室/本部</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">性別</label>
-                                        <span>男</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">到職日期</label>
-                                        <span>2017/01/01</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">離職日期</label>
-                                        <span>2022/12/31</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">離職註記</label>
-                                        <span>Y</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">電子郵件信箱</label>
-                                        <span>xxxxxxxxx@zzz.gmail.com</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">連絡電話</label>
-                                        <span>0912345678</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">啟用狀態</label>
-                                        <span>N</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-3">
-                                        <label for="">啟用日期</label>
-                                        <span>2017/01/01</span>
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="">停用日期</label>
-                                        <span>2022/12/31</span>
+                            </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">模組代號</label>
+                                    <div>
+                                        <select name="" id="">
+                                            <option value="">請選擇</option>
+                                            <option value="">001</option>
+                                            <option value="">002</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="searchSection result">
-                            <div class="content-header">
-                                <div class="title">設定</div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">功能所屬作業代號</label>
+                                    <input type="text" class="form-control w-100" id="">
+                                </div>
                             </div>
-                            <div class="content-body">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th colspan="3">已賦予之角色</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="col">
-                                                            <button type="button"
-                                                                class="btn btn_style btn_secondary_danger">全部加入</button>
-                                                        </th>
-                                                        <th scope="col">角色代號</th>
-                                                        <th scope="col">角色名稱</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="10%">
-                                                            <div class="table_operateBtn text-center">
-                                                                <a href="#" class="btn_style btn_edit">編輯</a>
-                                                                <button type="button"
-                                                                    class="btn_style btn_delete">刪除</button>
-                                                            </div>
-                                                        </td>
-                                                        <td>admin01</td>
-                                                        <td>系統管理員</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">功能類別</label>
+                                    <div>
+                                        <select name="" id="">
+                                            <option value="">請選擇</option>
+                                            <option value="">類別1</option>
+                                            <option value="">類別2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">上層功能代號</label>
+                                    <input type="text" class="form-control w-100" id="">
+                                </div>
+                            </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">是否啟用</label>
+                                    <div class="radio_group radio_inline">
+                                        <div class="radio_item">
+                                            <input type="radio" id="yes" name="enable" checked>
+                                            <label for="yes">是</label>
                                         </div>
-                                        <div class="col-6">
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                        <th colspan="3">未賦予之角色</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="col">
-                                                            <button type="button"
-                                                                class="btn btn_style btn_secondary_danger">全部移除</button>
-                                                        </th>
-                                                        <th scope="col">角色代號</th>
-                                                        <th scope="col">角色名稱</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="10%">
-                                                            <div class="table_operateBtn text-center">
-                                                                <button type="button"
-                                                                    class="btn_style btn_primary">移除</button>
-                                                            </div>
-                                                        </td>
-                                                        <td>admin01</td>
-                                                        <td>系統管理員</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="radio_item">
+                                            <input type="radio" id="no" name="enable">
+                                            <label for="no">否</label>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form_btn">
-                            <button type="submit" class="btn_item btn_style btn_primary_purple">儲存</button>
-                            <a href="人員與角色設定.html" class="btn_style btn_primary_outline">回上頁</a>
-                        </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">功能選單名稱</label>
+                                    <input type="text" class="form-control w-100" id="">
+                                </div>
+                            </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">功能選單備註</label>
+                                    <div class="radio_group radio_inline">
+                                        <div class="radio_item">
+                                            <input type="radio" id="show" name="remark" checked>
+                                            <label for="show">顯示</label>
+                                        </div>
+                                        <div class="radio_item">
+                                            <input type="radio" id="noshow" name="remark">
+                                            <label for="noshow">不顯示</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">排序</label>
+                                    <input type="text" class="form-control w-100" id="">
+                                </div>
+                            </div>
+                            <div class="form-row form_item">
+                                <div class="col-md-5">
+                                    <label for="">功能全名稱</label>
+                                    <input type="text" class="form-control w-100" id="">
+                                </div>
+                            </div>
+                            <div class="form_btn">
+                                <button type="submit" class="btn_item btn_style btn_primary_purple">儲存</button>
+                                <a href="功能資料維護.html" class="btn_style btn_primary_outline">回上頁</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>

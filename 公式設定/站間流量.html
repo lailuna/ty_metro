@@ -93,6 +93,15 @@
                     <ul class="secondfloor">
                     </ul>
                 </li>
+                <li class="firstfloor_item">
+                    <a href="#" class="firstfloor_link">系統管理<i class="fa fa-angle-down icon" aria-hidden="true"></i></a>
+                    <ul class="secondfloor">
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../系統管理/角色資料維護/角色資料維護.html">角色資料維護</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../系統管理/功能資料維護/功能資料維護.html">功能資料維護</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../系統管理/角色與功能設定/角色與功能設定.html">角色與功能設定</a></li>
+                        <li class="secondfloor_item"><a class="secondfloor_link" href="../系統管理/人員與角色設定/人員與角色設定.html">人員與角色設定</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="col-lg-10 content_bg">
@@ -119,6 +128,11 @@
                                 <button class="nav-link" id="pills-analysis2-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-analysis2" type="button" role="tab"
                                     aria-controls="pills-analysis2" aria-selected="false">站間時間</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-analysis3-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-analysis3" type="button" role="tab"
+                                    aria-controls="pills-analysis3" aria-selected="false">直普比率</button>
                             </li>
                         </ul>
                     </div>
@@ -219,13 +233,63 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="form_item">
-                                                    <label for="">目的地:</label>
-                                                    <select name="" id="">
-                                                        <option value="">請選擇</option>
-                                                        <option value="">往台北</option>
-                                                        <option value="">往中壢</option>
-                                                    </select>
+                                                    <label for="">檔案:</label>
+                                                    <input type="file">
                                                 </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="btn_item btn_style btn_primary_purple">匯入</button>
+                                                <button type="button" class="btn_item btn_style btn_primary_outline"
+                                                    data-bs-dismiss="modal">離開</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- 直普比率 -->
+                             <div class="tab-pane fade" id="pills-analysis3" role="tabpanel"
+                                aria-labelledby="pills-analysis3-tab">
+                                <div class="searchSection filter">
+                                    <div class="content-header">
+                                        <div class="title">直普比率</div>
+                                        <div class="operateBtnGroup">
+                                            <button type="button" class="btn operateBtn" data-bs-toggle="modal"
+                                                data-bs-target="#import2Modal">匯入</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">檔名</th>
+                                                    <th scope="col">更新時間</th>
+                                                    <th scope="col">更新人員</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>檔名1</td>
+                                                    <td>2024/01/01</td>
+                                                    <td>王曉明</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="text-center mt-3">
+                                            <button type="submit"
+                                                class="btn_item btn_style btn_primary_purple">匯出歷程</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="import2Modal" tabindex="-1"
+                                    aria-labelledby="importModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
                                                 <div class="form_item">
                                                     <label for="">檔案:</label>
                                                     <input type="file">
