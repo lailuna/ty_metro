@@ -411,6 +411,14 @@ p {
   align-items: center;
 }
 
+.item_inline {
+  display: flex;
+  align-items: center;
+}
+.item_inline label {
+  margin-bottom: 0;
+}
+
 button {
   padding: 0;
 }
